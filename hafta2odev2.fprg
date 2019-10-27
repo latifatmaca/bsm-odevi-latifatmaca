@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="29"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 10:07:48 "/>
+        <attribute name="created" value="Mjk7IFBDMjk7IDIwMTktMTAtMDk7IDA5OjA4OjI3IDsgMTU5Mg=="/>
+        <attribute name="edited" value="Mjk7IFBDMjk7IDIwMTktMTAtMDk7IDEwOjA3OjQ4IDsgMTU4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, tahmin, rastgele, hak" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="rastgele" expression="random(100)"/>
+            <assign variable="hak" expression="5"/>
+            <output expression="&quot;tahmininizi giriniz&quot;"/>
+            <output expression="rastgele"/>
+            <do expression="(tahmin!=rastgele)&amp;&amp;(hak&gt;=1)">
+                <input variable="tahmin"/>
+                <if expression="tahmin&lt;rastgele">
+                    <then>
+                        <output expression="&quot;Daha b&#252;y&#252;k bir say&#305; tahmin ediniz&quot;"/>
+                        <assign variable="hak" expression="hak-1"/>
+                        <output expression="hak&amp;&quot; hakk&#305;n&#305;z kald&#305;&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="tahmin==rastgele">
+                            <then>
+                                <output expression="&quot;dogru tahmin ettiniz&quot;"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Daha k&#252;&#231;&#252;k bir say&#305; tahmin ediniz&quot;"/>
+                                <assign variable="hak" expression="hak-1"/>
+                                <output expression="hak&amp;&quot; hakk&#305;n&#305;z kald&#305;&quot;"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+            <if expression="hak==0">
+                <then>
+                    <output expression="&quot;tahmin hakk&#305;n&#305;z bitti say&#305;m&#305;z&quot;&amp;rastgele"/>
+                </then>
+                <else>
+                    <output expression="rastgele &amp;&quot;say&#305;s&#305;n&#305; &quot;&amp;sayac&amp;&quot;kerede bildiniz&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

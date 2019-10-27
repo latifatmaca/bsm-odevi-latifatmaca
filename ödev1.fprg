@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="29"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 10:14:01 "/>
+        <attribute name="created" value="Mjk7IFBDMjk7IDIwMTktMTAtMDI7IDA5OjE3OjMwIDsgMTU3OQ=="/>
+        <attribute name="edited" value="Mjk7IFBDMjk7IDIwMTktMTAtMDI7IDEwOjE0OjAxIDsgMTU2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Girilen bir say&#305;n&#305;n pozitif,negatif yada s&#305;f&#305;r olup olmad&#305;&#287;&#305;n&#305; kontrol ederek her bir ihtimal i&#231;in ekrana &#231;&#305;kt&#305; veren algoritmay&#305; yaz&#305;n&#305;z."/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;a say&#305;s&#305;n&#305; giriniz&quot;"/>
+            <input variable="a"/>
+            <if expression="a=0">
+                <then>
+                    <output expression="&quot;a s&#305;f&#305;ra esit&quot;"/>
+                </then>
+                <else>
+                    <if expression="a&gt;0">
+                        <then>
+                            <output expression="&quot;a pozitif bir say&#305;&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;a negatif bir say&#305;&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

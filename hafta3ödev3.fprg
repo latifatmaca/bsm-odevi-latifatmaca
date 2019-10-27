@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="29"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 10:02:47 "/>
+        <attribute name="created" value="Mjk7IFBDMjk7IDIwMTktMTAtMTY7IDA5OjA3OjA1IDsgMTU4NQ=="/>
+        <attribute name="edited" value="Mjk7IFBDMjk7IDIwMTktMTAtMTY7IDEwOjAyOjQ3IDsgMTU3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="birler, onlar, y&#252;zler, binler, sayi, uzunluk, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;4 basamakli pozitif bir sayi giriniz.&quot;"/>
+            <do expression="sayi&lt;0 &amp;&amp; uzunluk=4">
+                <input variable="sayi"/>
+                <assign variable="uzunluk" expression="Len(ToString(sayi))"/>
+                <if expression="uzunluk!=4">
+                    <then>
+                        <output expression="&quot;4 basamakl&#305; bir say&#305; giriniz&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="birler" expression="sayi%10"/>
+                        <assign variable="onlar" expression="(sayi/10)%10"/>
+                        <assign variable="y&#252;zler" expression="(sayi/100)%10"/>
+                        <assign variable="binler" expression="sayi/1000"/>
+                        <assign variable="sonuc" expression="(birler*birler)+(onlar*onlar)+(y&#252;zler*y&#252;zler)+(binler*binler)"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="sonuc"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="29"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 10:14:54 "/>
+        <attribute name="created" value="Mjk7IFBDMjk7IDIwMTktMTAtMDI7IDA5OjQyOjAyIDsgMTU3Ng=="/>
+        <attribute name="edited" value="Mjk7IFBDMjk7IDIwMTktMTAtMDI7IDEwOjE0OjU0IDsgMTU3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Girilen iki say&#305;n&#305;n b&#252;y&#252;k,k&#252;&#231;&#252;k yada e&#351;it olma durumlar&#305;n&#305; kontrol ederek her durum i&#231;in gerekli &#231;&#305;kt&#305;y&#305; yazd&#305;ran algoritman&#305;n ak&#305;&#351; diyagram&#305;n&#305; haz&#305;rlay&#305;n&#305;z"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;a say&#305;s&#305;n&#305; giriniz&quot;"/>
+            <input variable="a"/>
+            <output expression="&quot;b say&#305;s&#305;n&#305; giriniz&quot;"/>
+            <input variable="b"/>
+            <if expression="a=b">
+                <then>
+                    <output expression="&quot;a say&#305;s&#305; b say&#305;s&#305;na esit&quot;"/>
+                </then>
+                <else>
+                    <if expression="a&lt;b">
+                        <then>
+                            <output expression="&quot;b say&#305;s&#305; buyuktur&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;a say&#305;s&#305; buyuktur&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
